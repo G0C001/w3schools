@@ -1,0 +1,950 @@
+<html>
+    <head>
+        <style>
+            .containerforall{
+                height: 105px;
+                background-color: #282A35;
+                font-family: 'Source Sans Pro', sans-serif;
+                width: 100%;
+                position: sticky;
+                top: 0;
+                
+            }
+            .parant01{
+                height: 60px;
+                background-color: none;
+                display: flex;
+                background-color: none;
+                background-color: white;
+            }
+            .first-child{
+                height: 45px;
+                background-color: #D9EEE1;
+                width: 150px;
+                border-radius: 25px;
+                text-align: end;
+                line-height: 45px;
+                padding-right: 20px;
+                margin-right: 20px;    
+            }
+            .first-child:hover{
+                background-color: #059862;
+                cursor: pointer;
+            }
+
+            .second-child{
+                height: 45px;
+                background-color: #04AA6D;
+                width: 95px;
+                border-radius: 25px;
+                margin-top: -45px;
+                text-align: center;
+                color: white;
+            }
+            .parant011{
+                display: flex;
+                width: 70%;
+                line-height: 25px;
+            }
+            .parant012{
+                display: flex;
+                width: 50%;
+                margin-top: 8px;
+                justify-content: end; 
+            }
+            .child01{
+                font-size: 17px;
+                border: 0px;
+                background-color: white;
+                width: 120px;
+            }
+            .child02{
+                font-size: 17px;
+                border: 0px;
+                background-color: white;
+                width: 120px;
+            }
+            .child03{
+                font-size: 17px;
+                border: 0px;
+                background-color: white;
+                width: 120px;
+            }
+            .parant02{
+                height: 35px;
+                background-color: #282A35;
+                width: 95%;
+                overflow: hidden;
+                line-height: 35px;
+                
+
+            }
+            .parant021{
+                height: 30px;
+                background-color: #282A35;
+                color: white;
+                border: none;
+                padding-left: 18px;
+                padding-right: 18px;
+                
+            }
+            @media (max-width:750px){
+                .child02{
+                    display: none;
+                }
+                
+            }
+            @media (max-width:600px){
+                .child01{
+                    display: none;
+                }
+            }
+            @media (min-width:600px){
+                .child03{
+                    display: none;
+                 }
+            }
+        
+            .parant021:hover{
+                background-color: black;
+                cursor: pointer;
+            }
+            .child01:hover{
+                background-color: #04AA6D;
+                cursor: pointer;
+            }
+            .child02:hover{
+                background-color: #04AA6D;
+                cursor: pointer;
+            }
+            .child03:hover{
+                background-color: #04AA6D;
+                cursor: pointer;
+            }
+            .second-child:hover{
+                cursor: pointer;   
+            }
+
+                  /* position o over */
+
+
+            .one{
+                background-color: #282A35;
+                padding: 35px;
+                text-align: center;
+                color: white;
+                -webkit-text-size-adjust: 100%;
+                padding-top: 40px;
+                padding-bottom: 90px;
+            }
+            .heading{
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: auto;
+                font-weight: 700;
+            }
+            .paragraph{
+                font-size: 21px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .search-box{
+                display: flex;
+                justify-content: center;
+                color: black;
+            }
+            .search-left {
+                height: 20px;
+                width: 350px;
+                padding: 15px;
+                background-color: white;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font: inherit; 
+                text-align: left;
+            }
+            .search-right{
+                height: 20px;
+                width: 60px;
+                padding: 15px;
+                background: #04AA6D;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;   
+            }
+                  /* position one over */
+            .two{
+                background-color: #D9EEE1;
+                padding: 20px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
+            .three{
+                background-color: #FFF4A3;
+                padding: 20px;
+                padding: 20px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
+            .four{
+                background-color: #282A35;
+                color: white;
+                padding: 20px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
+            .five{
+                background-color: #F3ECEA;
+                padding: 20px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
+            .six{
+                background-color: #96D4D4;
+                padding: 20px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
+            .heading{
+                font-size: 70px;
+                text-align: center;
+                margin-bottom: auto;
+                font-weight: 700;
+                font: bold;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .paragraph{
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 30px;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .four-types{
+              height: 40px;
+              width: 200px;
+              color: white;
+              margin:auto;
+              display: block;
+              border-radius: 25px;
+              font-size: 18px;
+              text-align: center;
+              margin-bottom: 20px;
+              box-sizing: inherit;
+              border: 0;
+              
+            }
+            .first-four-box{
+                padding-bottom: 20px;
+                box-sizing: inherit;
+                 
+            }
+            .second-four-box{
+                -webkit-text-size-adjust: 100%;
+                background-color: #E7E9EB;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                color: black;
+            }
+            .second-four-box-center{
+                height: 300px;
+                width: auto;
+                background-color: white;
+                margin-bottom: 20px;
+                border-left: 5px solid green; 
+            }
+            .second-four-box-button{
+                padding: 12px;
+                width: 200px;
+                margin-bottom: 20px;
+                border-radius: 25px;
+                border: none;
+                font-size: 20px;
+                color: white;
+            }
+            @media(min-width: 800px){
+                .second-four-box{
+                    height: auto;
+                    width: auto;
+                }
+                .common-four-container{
+                    
+                    justify-content: center;
+                    padding-bottom: 90px;
+                }
+            }
+            @media(min-width: 1000px){
+                .common-four-container{
+                    display: flex;
+                    justify-content: center;
+                }
+                .second-four-box{
+                    height: auto;
+                    width: 400px;
+                }
+                .gap1{
+                    margin-right: 155px;
+                    padding-right: 30px;
+                }
+                .gap2{
+                    margin-right: 160px;
+                    padding-right: 30px;
+                }
+                .gap3{
+                    margin-right: 60px;
+                    padding-right: 70px;
+                }
+                .gap4{
+                    margin-right: 175px;
+                    padding-right: 30px;
+                }
+                .gap5{
+                    margin-right: 150px;
+                    padding-right: 30px;
+                }
+            }
+                  /* first 6 over */
+                .container9{
+                -webkit-text-size-adjust: 100%;
+                background-color: #282A35;
+                padding-top: 95px;
+                padding-bottom: 95px;
+                
+                
+                
+            }
+            .first-parant{
+                height: 200px;
+                width: 100%;
+                /* background-color: aqua; */
+                margin-bottom: 20px;
+                text-align: center;  
+                border-radius: 5px;             
+            }
+            .second-parant{
+                height: 200px;
+                width: 100%;
+                /* background-color: gray; */
+                margin-right: 20px;
+                text-align: center; 
+                border-radius: 5px;  
+            }
+            .first-parant2{
+                padding: 20px;
+                width: calc(100% - 40px);
+                padding-bottom: 40px;  
+            }
+            .second-parant2{
+                padding: 20px;
+                width: calc(100% - 40px);
+                padding-bottom: 40px;
+            }
+            @media(min-width: 400px){
+                .container9{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .display-type{
+                    margin-bottom: 20px;
+                }
+            }
+            @media(min-width: 1000px){
+                .container9{
+                    padding-left: 100px;
+                    padding-right: 100px;
+                }
+                .display-type{
+                    margin-bottom: 40px;
+                }
+                .second-parant{
+                    margin-left: 80px;
+                }
+                .display-type{
+                    display: flex;
+                }
+            }
+            #box36{
+                height: 120px;
+                display: flex;
+            }
+            .child91{
+                height: 100%;
+                width: 100%;
+                background-color: aliceblue;
+                border-radius: 5px;
+                font-size: 25px;
+                border: 0;
+            }
+            .child92{
+                height: 100%;
+                width: 100%;
+                background-color: white;
+                margin-left: 50px;
+                border-radius: 5px;
+                font-size: 25px;
+                border: 0;
+            }
+            #type2height{
+                height: 150px;
+            }
+            #type4height{
+                height: 120px;
+            }
+            .font-in-6{
+                font-size: 40px;
+            }
+            .paragraph7{
+                font-size: 16px;
+                font-weight: 600;
+                font-family: 'Source Sans Pro', sans-serif;
+                line-height: -20px;
+            }
+            .style{
+            background-color: #282A35;
+            color: white;
+            border-radius: 25px;
+            font-weight: 400px;
+            width: 200px;
+            height: 40px;
+            line-height: 1.5;
+            box-sizing: inherit;
+            font-family: 'Source Sans Pro', sans-serif;
+           }
+           .style9{
+            font-size: 25px;
+           }
+           .smoke{
+                background-color: #F3ECEA;
+            }
+            .green{
+                background-color: #D9EEE1;
+            }
+            .blue{
+                background-color: #96D4D4;
+            }
+            .pink1{
+                background-color: #FFC0C7;
+            }
+            .yellow{
+                background-color: #FFF4A3;
+            }
+            .gray{
+                background-color: #E7E9EB;
+            }
+            .green1{
+                background-color: #D9EEE1;
+            }
+            .blue1{
+                background-color: #96D4D4;
+            }
+            .pink{
+                background-color: #FFC0C7;
+            }
+            .yellow1{
+                background-color: #FFF4A3;
+            }
+            .gray1{
+                background-color: #E7E9EB;
+            }
+            .smoke:hover{
+                background-color: #f1f1f1;
+                cursor: pointer;
+            }
+            .green:hover{
+                background-color: #c6f6d8;
+                cursor: pointer;
+            }
+            .blue:hover{
+                background-color: #95dddd;
+                cursor: pointer;
+            }
+            .pink1:hover{
+                background-color: #f3c1c7;
+                cursor: pointer;
+            }
+            .yellow:hover{
+                background-color: #e5e0b3;
+                cursor: pointer;
+            }
+            .gray:hover{
+                background-color: #d9e4ef;
+                cursor: pointer;
+            }
+            .style:hover{
+                background-color: black;
+                cursor: pointer;
+            }
+            .second-four-box-button{
+                background-color: #04AA6D;
+            }
+            .second-four-box-button:hover{
+                background-color: #61a58c;
+                cursor: pointer;
+            }
+            .darkgreen{
+                background-color: #04AA6D;
+            }
+            .darkgreen:hover{
+                background-color: #389c77;
+                cursor: pointer;
+            }
+            .black{
+                background-color: #282A35;
+            }
+            .black:hover{
+                background-color: black;
+                cursor: pointer;
+            }
+            .white:hover{
+                background-color: rgb(210, 210, 210);
+                cursor: pointer;
+            }
+            .one-para-hover{
+                margin-top: 40px;
+                border: none;
+                background-color: #282A35;
+                color: white;
+                font-size: 18px;
+            }
+            .one-para-hover:hover{
+                background-color: #04AA6D;
+                cursor: pointer;
+            }
+            
+
+
+            
+
+
+
+
+        </style>
+        </head>
+        <body style="margin: 0;">
+                
+            
+
+
+
+                <div class="containerforall">
+                    <div class="parant01">
+       
+                       <div class="parant011">
+                       
+                       <button class="child01">Tutorial</button>
+                       <button class="child01">Exercises</button>
+                       <button class="child02" style="width: 120px;">Get Certified</button>
+                       <button class="child01">Services</button>
+                       <button class="child03">Menu</button>
+                       
+                    </div>
+       
+                        <div class="parant012">
+                           <div class="first-child">Log in
+                               <div class="second-child">Sign Up</div>
+                       </div>      
+                          </div>
+                   </div>
+       
+                    <div class="parant02">
+                        <button class="parant021">HTML</button>
+                        <button class="parant021">CSS</button>
+                        <button class="parant021">JAVASCRIPT</button>
+                        <button class="parant021">SQL</button>
+                        <button class="parant021">PYTHON</button>
+                        <button class="parant021">JAVA</button>
+                        <button class="parant021">PHP</button>
+                        <button class="parant021">BOOTSTRAP</button>
+                        <button class="parant021">HOW TO</button>
+                        <button class="parant021">W3.CSS</button>
+                        <button class="parant021">C</button>
+                        <button class="parant021">C++</button>
+                        <button class="parant021">C#</button>
+                        <button class="parant021">REACT</button>
+                        <button class="parant021">R</button>
+                        <button class="parant021">JQUERY</button>
+                        <button class="parant021">DJANGO</button>
+                    </div>
+               </div>
+            
+
+            <!-- <div class="container one1"> -->
+
+
+                <div class="one">
+                    <h1 class="heading"> Learn to Code</h1>
+                    <h3 class="paragraph" style="color: #FFC0C7;">With the world's largest web developer site.</h3>
+                    <div class="search-box">
+                        <div class="search-left">Search our tutorials, e.g. HTML</div>
+                        <div class="search-right"></div>
+                        </div>
+                    <button class="one-para-hover" style="text-decoration-line: underline;">Not Sure Where To Begin?</button>
+                </div>
+
+
+
+           <div class="two">
+          
+            <div class="common-four-container">
+
+            <div class="first-four-box gap1">
+
+            <h1 class="heading">HTML</h1>
+            <h3 class="paragraph">The language for building web pages</h3>
+                <button class="four-types darkgreen">Learn HTML</button>
+                <button class="four-types yellow yellow1" style="color: black;" >Video Tutorial</button>
+                <button class="four-types black">HTML Reference</button>
+                <button class="four-types pink1 pink" style="color: black;">Get Certified</button>
+            </div>
+
+
+            <div class="second-four-box">
+
+                 <h2>HTML Example:</h2>
+                 <div class="second-four-box-center"></div>
+                 <button class="second-four-box-button darkgreen green1">Try it Yourself</button>
+          </div>
+        </div>
+        </div>
+                                 <!-- /* container two over */ -->
+            <div class="three">
+          
+            <div class="common-four-container">
+
+            <div class="first-four-box gap2">
+
+            <h1 class="heading">CSS</h1>
+            <h3 class="paragraph">The language for styling web pages</h3>
+                <button class="four-types darkgreen">Learn CSS</button>
+                <button class="four-types black">CSS Reference</button>
+                <button class="four-types pink1 pink" style="color: black;">Get Certified</button>
+            </div>
+
+
+            <div class="second-four-box">
+
+                 <h2>CSS Example:</h2>
+                 <div class="second-four-box-center"></div>
+                 <button class="second-four-box-button darkgreen">Try it Yourself</button>
+          </div>
+        </div>
+        </div>
+                             <!-- container three over -->
+        <div class="four">
+          
+            <div class="common-four-container">
+
+            <div class="first-four-box gap3">
+
+            <h1 class="heading">JavaScript</h1>
+            <h3 class="paragraph">The language for programming web pages</h3>
+                <button class="four-types darkgreen">Learn JavaScript</button>
+                <button class="four-types white" style="color: black;">JavaScript Reference</button>
+                <button class="four-types pink1 pink" style="color: black;">Get Certified</button>
+            </div>
+
+
+            <div class="second-four-box">
+
+                 <h2>JavaScript Example:</h2>
+                 <div class="second-four-box-center"></div>
+                 <button class="second-four-box-button darkgreen">Try it Yourself</button>
+          </div>
+        </div>
+        </div>
+                                <!-- container four over -->
+        <div class="five">
+          
+            <div class="common-four-container ">
+
+            <div class="first-four-box gap4">
+
+            <h1 class="heading">Python</h1>
+            <h3 class="paragraph">A popular programming language</h3>
+                <button class="four-types darkgreen">Learn Python</button>
+                <button class="four-types black">Python Reference</button>
+                <button class="four-types pink1 pink" style="color: black;">Get Certified</button>
+            </div>
+
+
+            <div class="second-four-box">
+
+                 <h2>Python Example:</h2>
+                 <div class="second-four-box-center"></div>
+                 <button class="second-four-box-button darkgreen">Try it Yourself</button>
+          </div>
+        </div>
+        </div>
+                            <!-- container five over -->
+        <div class="six">
+          
+            <div class="common-four-container ">
+
+            <div class="first-four-box gap5">
+
+            <h1 class="heading">SQL</h1>
+            <h3 class="paragraph">A language for accessing databases</h3>
+                <button class="four-types darkgreen">Learn SQL</button>
+                <button class="four-types black">SQL Reference</button>
+                <button class="four-types pink1 pink" style="color: black;">Get Certified</button>
+            </div>
+
+
+            <div class="second-four-box">
+
+                 <h2>SQL Example:</h2>
+                 <div class="second-four-box-center"></div>
+                 <button class="second-four-box-button darkgreen">Try it Yourself</button>
+          </div>
+        </div>
+    </div>
+ 
+
+
+    <div class="container9">
+
+        <div class="display-type">
+
+            <div class="first-parant first-parant2 pink">
+             <h2 class="font-in-6">PHP</h2>
+             <h5 class="paragraph7">A web server programming language</h5>
+             <button class="style">Learn PHP</button>
+            </div>
+ 
+            <div class="second-parant second-parant2 yellow1">
+             <h2 class="font-in-6 ">jQuery</h2>
+             <h5 class="paragraph7">A JS library for developing web pages</h5>
+             <button class="style">Learn jQuery</button>
+            </div>
+</div>
+
+
+<div class="display-type">
+
+            <div class="first-parant first-parant2 gray1">
+                <h2 class="font-in-6">Java</h2>
+                <h5 class="paragraph7">A programming language</h5>
+                <button class="style">Learn Java</button>
+            </div>
+
+            <div class="second-parant second-parant2 green1">
+                <h2 class="font-in-6">C++</h2>
+                <h5 class="paragraph7">A programming language</h5>
+                <button class="style">Learn C++</button>
+            </div>
+</div>
+
+
+
+<div class="display-type">
+
+            <div class="first-parant first-parant2 blue1">
+                <h2 class="font-in-6">W3.CSS</h2>
+                <h5 class="paragraph7">A CSS framework for faster and better responsive web pages</h5>
+                <button class="style">Learn W3.CSS</button>
+            </div>
+
+            <div class="second-parant second-parant2 gray1">
+                <h2 class="font-in-6">Bootstrap</h2>
+                <h5 class="paragraph7">A CSS framework for designing better web pages</h5>
+                <button class="style">Learn Bootstrap</button>
+            </div>
+</div>
+                    
+                            <!-- six types over -->
+
+<div class="display-type">
+            <button class="first-parant pink1 style9" id="type2height" >C
+                    <!-- <h3 class="style9">C</h3> -->
+            </button>
+            <button class="second-parant yellow style9" id="type2height" >C#
+                <!-- <h3 class="style9">C#</h3> -->
+            </button>
+</div>
+                            <!-- two types over -->
+
+
+
+<div class="display-type">
+                <div class="first-parant" id="box36">                        
+                    <button class="child91 smoke style9">R</button>                   
+                    <button class="child92 green">kotlin</button>                
+</div>
+<div class="second-parant"id="box36">
+                    <button class="child91 blue">Node.js</button>
+
+                    <button class="child92 pink1 style9">React</button>
+                </div>
+
+
+</div>
+
+
+<div class="display-type">
+
+                        
+                    <div class="first-parant" id="box36">
+                            
+                        <button class="child91 yellow">JSON</button>
+                        <button class="child92 smoke">Vue</button>
+</div>
+<div class="second-parant"id="box36">
+
+                        <button class="child91 green">MySQL</button>
+                        <button class="child92 blue">XML</button>
+</div>
+    
+    
+</div>
+
+<div class="display-type">
+
+
+<div class="first-parant" id="box36">
+                                
+                            <button class="child91 pink1">Sass</button>
+                            <button class="child92 yellow">Icons</button>
+                        </div>
+                        <div class="second-parant"id="box36">
+                            <button class="child91 smoke">RWD</button>
+                            <button class="child92 green">Graphics</button>
+</div>
+        
+        
+</div>
+
+<div class="display-type">
+
+
+<div class="first-parant" id="box36">
+                                    
+                                <button class="child91 blue">SVG</button>
+                                <button class="child92 pink1">Canvas</button>
+                            </div>
+                            <div class="second-parant"id="box36">
+                                <button class="child91 yellow">Raspberry PI</button>
+                                <button class="child92 smoke">Cyber Security</button>
+                            </div>
+            
+            
+</div>
+
+<div class="display-type">
+
+
+                                <div class="first-parant" id="box36">
+                                        
+                                    <button class="child91 green">Colours</button>
+                                    <button class="child92 blue">Git</button>
+                                </div>
+                                <div class="second-parant"id="box36">
+                                    <button class="child91 pink1">Matplotlib</button>
+                                    <button class="child92 yellow">NumPy</button>
+                                </div>
+                
+                
+</div>
+
+<div class="display-type">
+
+
+                                    <div class="first-parant" id="box36">
+                                            
+                                        <button class="child91 smoke">Pandas</button>
+                                        <button class="child92 green">SciPy</button>
+                                    </div>
+                                    <div class="second-parant"id="box36">
+                                        <button class="child91 blue">ASP</button>
+                                        <button class="child92 pink1">AngularJS</button>
+                                </div>
+                    
+                    
+</div>
+
+<div class="display-type">
+
+
+                                        <div class="first-parant" id="box36">
+                                                
+                                            <button class="child91 yellow">AppML
+                                                <!-- <h3 class="style9 "></h3> -->
+                                            </button>
+                                            <button class="child92 smoke">Go
+                                                <!-- <h3 class="style9 "></h3> -->
+                                            </button>
+                                        </div>
+                                        <div class="second-parant"id="box36">
+                                            <button class="child91 green">TypeScript
+                                                <!-- <h3 class="style9 "></h3> -->
+                                            </button>
+                                            <button class="child92 blue">Diango
+                                                <!-- <h3 class="style9 "></h3> -->
+                                            </button>
+                                        </div>
+</div>
+<div class="display-type">
+
+
+                                            <div class="first-parant" id="box36">
+                                                    
+                                                <button class="child91 blue">Diango
+                                                    <!-- <h3 class="style9 "></h3> -->
+                                                </button>
+                                                <button class="child92 yellow">Statistics
+                                                    <!-- <h3 class="style9 "></h3> -->
+                                                </button>
+                                            </div>
+                                            <div class="second-parant"id="box36">
+                                                <button class="child91 smoke">Data Science
+                                                    <!-- <h3 class="style9 "></h3> -->
+                                                </button>
+                                                <button class="child92 green">Typing Speed
+                                                    <!-- <h3 class="style9 "></h3> -->
+                                                </button>
+                                            </div>
+</div>
+<div class="display-type">
+
+
+                                                <div class="first-parant" id="box36">
+                                                        
+                                                    <button class="child91 blue">HowTo
+                                                        <!-- <h3 class="style9 "></h3> -->
+                                                    </button>
+                                                    <button class="child92 pink1">Code Game
+                                                        <!-- <h3 class="style9  "></h3> -->
+                                                    </button>
+                                                </div>
+                                                <div class="second-parant"id="box36">
+                                                    <button class="child91 yellow">Spaces
+                                                        <!-- <h3 class="style9 "></h3> -->
+                                                    </button>
+                                                    <button class="child92 smoke">PostgreSQL
+                                                        <!-- <h3 class="style9 "></h3> -->
+                                                    </button>
+                                                </div>
+</div>
+
+ <div class="display-type">
+                                                    <button class="first-parant blue style9" id="type4height" >Excel
+                                                            <!-- <h3 class="style9"></h3> -->
+                                                    </button>
+                                                    <button class="second-parant yellow style9" id="type4height" >Google Sheets
+                                                        <!-- <h3 class="style9"></h3> -->
+                                                    </button>
+                                                    </div>
+
+                                                    <div class="display-type">
+                                                        <button class="first-parant pink1 style9" id="type4height" >Machine Learning
+                                                                <!-- <h3 class="style9"></h3> -->
+                                                        </button>
+                                                        <button class="second-parant gray style9" id="type4height" >Artificial Intelligence</button>
+                                 </div>
+                                                
+
+
+</div>
+
+            </body>
+        </head>
+</html>       
